@@ -3,11 +3,13 @@ package client.enums;
 public enum FontName {
 
     //todo
-    textField("Times New Roman"),
-    passwordField("Times New Roman"),
-    button("Belwe Bd BT Bold"),
+    textField("times new roman"),
+    passwordField("times new roman"),
+    button("AvQest"),
     accountText("FORTE"),
-    accountTitle("englishTowne");
+    MESSAGE_TEXT("FORTE"),
+    MESSAGE_TITLE("FORTE"),
+    accountTitle("EnglishTowne");
 
     private String name;
 

@@ -26,7 +26,7 @@ public class MyButton extends JButton {
         crossSound = new Sound(ClientPath.crossButtonSound);
         setContentAreaFilled(false);
         setBorder(BorderFactory.createEmptyBorder());
-        setFont(new Font(fontName, Font.ITALIC, fontSize));
+        setFont(new MyFont(fontName, fontSize).getFont());
         setForeground(color);
         setHorizontalTextPosition(JButton.CENTER);
         setVerticalTextPosition(JButton.CENTER);

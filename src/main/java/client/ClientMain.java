@@ -1,7 +1,9 @@
 package client;
 
-import client.graphic.FrameAndPanel.AccountMenu;
+import client.enums.ClientPath;
 import client.graphic.Graphic;
+import common.CommonPath;
+import common.Initialize;
 
 public class ClientMain {
 
@@ -9,8 +11,8 @@ public class ClientMain {
         new ClientMain().startNewClient();
     }
 
-    public void startNewClient(){
-        Initialize.getInstance().InitializeClient();
-        new Graphic().start();
+    private void startNewClient(){
+        Initialize.getInstance().initializeClient();
+        new Graphic(CommonPath.configFile.getPath()).start();
     }
 }
